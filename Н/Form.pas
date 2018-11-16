@@ -1,10 +1,10 @@
-unit UMenu;
+unit Form;
 
 interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, UEstate, Vcl.StdCtrls;
 
 type
   TForm1 = class(TForm)
@@ -21,8 +21,12 @@ type
     N22: TMenuItem;
     N32: TMenuItem;
     N42: TMenuItem;
+
+
   private
-    { Private declarations }
+    State:Estate;
+    published
+  constructor create (AOwner:TForm);
   public
     { Public declarations }
   end;
@@ -32,6 +36,15 @@ var
 
 implementation
 
+
+
 {$R *.dfm}
+
+{ TForm1 }
+
+constructor TForm1.create(AOwner: TForm);
+begin
+  State:=menu.Create(self);
+end;
 
 end.

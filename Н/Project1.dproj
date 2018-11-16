@@ -89,6 +89,9 @@
 			<DCCReference Include="lab\1odnoi\Ulab11.pas"/>
 			<DCCReference Include="lab\1odnoi\Ulab12.pas"/>
 			<DCCReference Include="lab\UEstate.pas"/>
+			<DCCReference Include="Form.pas">
+				<ModuleName>UMenu</ModuleName>
+			</DCCReference>
 			<BuildConfiguration Include="Release">
 				<Key>Cfg_2</Key>
 				<CfgParent>Base</CfgParent>
