@@ -2,11 +2,11 @@ program Project1;
 
 uses
   Vcl.Forms,
-  Unit1 in 'UMenu.pas' {Form1},
-  Ulab11 in 'lab\1odnoi\Ulab11.pas',
-  Ulab12 in 'lab\1odnoi\Ulab12.pas',
-  UEstate in 'lab\UEstate.pas',
-  UMenu in 'Form.pas';
+  Unit1 in 'Unit1.pas' {Form1},
+  UIState in 'UIState.pas',
+  ULab1 in 'ULab1.pas',
+  ULab2 in 'ULab2.pas',
+  UMenu in 'UMenu.pas';
 
 {$R *.res}
 
