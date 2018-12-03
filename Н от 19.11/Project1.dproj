@@ -97,6 +97,7 @@
 			<DCCReference Include="ULab7.pas"/>
 			<DCCReference Include="ULab8.pas"/>
 			<DCCReference Include="ULab9.pas"/>
+			<DCCReference Include="UHelp.pas"/>
 			<BuildConfiguration Include="Release">
 				<Key>Cfg_2</Key>
 				<CfgParent>Base</CfgParent>

@@ -13,7 +13,8 @@ uses
   ULab6 in 'ULab6.pas',
   ULab7 in 'ULab7.pas',
   ULab8 in 'ULab8.pas',
-  ULab9 in 'ULab9.pas';
+  ULab9 in 'ULab9.pas',
+  UHelp in 'UHelp.pas';
 
 {$R *.res}
 

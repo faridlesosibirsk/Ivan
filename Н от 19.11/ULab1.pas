@@ -12,28 +12,18 @@ type
     Edit1: TEdit;
     Edit2: TEdit;
     Button1:TButton;
-   // procedure Button1Click(Sender: TObject);
+    procedure Button1Click(AOwner: TForm);
   published
     constructor create(AOwner: TForm);
   public
     procedure destroy;
   end;
-
+var
+  a,b,c:integer;
 implementation
 
 { Lab1 }
- {
-procedure Lab1.Button1Click(Sender: TObject);
 
-  var
-A,B,C:integer;
-begin
-  A := Edit1.Text;
-   B := Edit2.Text;
-   C := A+B;
-   Label1.Caption := IntToStr(C);
-end;
-}
 constructor Lab1.create(AOwner: TForm);
 begin
   label1 := Tlabel.create(AOwner);
@@ -53,12 +43,19 @@ begin
   Edit2.Left:=20;
   Edit2.Parent := AOwner;
   Edit2.Text:='';
+  //d
+  Button1:=TButton.Create(AOwner);
+  Button1.Left := 150;
+  Button1.Top := 180;
+  Button1.Parent := AOwner;
+  Button1.caption := 'Lab1';
+  //s
+end;
 
-  Button1:= TButton.Create(AOwner);
-  Button1.Left:=120;
-  Button1.Top:=80;
-  Button1.Parent:=AOwner;
-  Button1.Caption:='Решить';
+procedure Lab1.Button1Click(AOwner: TForm);
+begin
+ //asd
+ Label1.Caption:='dfgg';
 end;
 
 procedure Lab1.destroy;
@@ -66,7 +63,6 @@ begin
   label1.Free;
   Edit1.Free;
   Edit2.Free;
-  Button1.Free;
 end;
 
 end.

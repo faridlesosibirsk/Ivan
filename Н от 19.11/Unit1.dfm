@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 320
-  ClientWidth = 580
+  ClientHeight = 290
+  ClientWidth = 414
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,9 +16,10 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object MainMenu1: TMainMenu
-    Left = 536
+    Left = 344
+    Top = 8
     object File1: TMenuItem
-      Caption = #1051#1072#1073#1086#1088#1072#1090#1086#1088#1085#1099#1077' '#1088#1072#1073#1086#1090#1099
+      Caption = #1051#1072#1073#1086#1088#1072#1090#1086#1088#1085#1072#1103' '#1088#1072#1073#1086#1090#1072
       object Open1: TMenuItem
         Caption = 'Lab1'
         OnClick = Open1Click
@@ -57,10 +58,11 @@ object Form1: TForm1
       end
     end
     object Help1: TMenuItem
-      Caption = 'Help'
+      Caption = #1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077
+      OnClick = Help1Click
     end
     object Exit1: TMenuItem
-      Caption = 'Exit'
+      Caption = #1042#1099#1093#1086#1076
       OnClick = Exit1Click
     end
   end

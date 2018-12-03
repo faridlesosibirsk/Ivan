@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
   System.Classes, Vcl.Graphics, UMenu, Vcl.StdCtrls,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, IniFiles,
-  UIState, ULab1, ULab2,ULab3,ULab4, ULab5,ULab6,ULab7, ULab8,ULab9;
+  UIState, ULab1, ULab2,ULab3,ULab4, ULab5,ULab6,ULab7, ULab8,ULab9,UHelp;
 
 type
   TForm1 = class(TForm)
@@ -34,7 +34,9 @@ type
     procedure Open7Click(Sender: TObject);
     procedure Open8Click(Sender: TObject);
     procedure Open9Click(Sender: TObject);
-    private
+    procedure Help1Click(Sender: TObject);
+
+  private
     state:IState;
   public
     { Public declarations }
@@ -60,6 +62,12 @@ begin
   Form1.Caption:=('Лабораторные работы: численные методы оптимизации');
 end;
 
+procedure TForm1.Help1Click(Sender: TObject);
+begin
+  state.destroy;
+  state:=THelp1.create(self);
+end;
+
 procedure TForm1.Open3Click(Sender: TObject);
 begin
    state.destroy;
@@ -70,6 +78,7 @@ procedure TForm1.Open1Click(Sender: TObject);
 begin
   state.destroy;
   state:=Lab1.create(self);
+
 end;
 
 
